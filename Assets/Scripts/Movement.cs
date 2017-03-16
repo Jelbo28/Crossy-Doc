@@ -42,25 +42,25 @@ public class Movement : MonoBehaviour {
         {
             StartCoroutine(Blaze(waitBuffer));
             transform.position += Vector3.left;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.left), step);
+            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.left), step);
         }
         if (movementVector.x < 0 && go == false)
         {
             StartCoroutine(Blaze(waitBuffer));
             transform.position += Vector3.Lerp(transform.position, Vector3.right, step);
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.right), step);
+            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.right), step);
         }
         if (movementVector.y > 0 && go == false)
         {
             StartCoroutine(Blaze(waitBuffer));
             transform.position += Vector3.back;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.back), step);
+            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.back), step);
         }
         if (movementVector.y < 0 && go == false)
         {
             StartCoroutine(Blaze(waitBuffer));
             transform.position += Vector3.forward;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.forward), step);
+            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.forward), step);
         }
     }
 
